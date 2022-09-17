@@ -1,0 +1,4 @@
+baseURL = 'http://localhost/'
+languageCode = 'en-us'
+title = "Esqer's Blog"
+theme = "hugo-PaperMod"
