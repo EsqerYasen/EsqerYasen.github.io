@@ -1,19 +1,16 @@
-
 ---
-title: "My 1st post"
+title: "Linux命令行 3 - head,tail,wc"
 date: 2020-09-15T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["hello"]
+tags: ["o"]
 author: "Esqer"
-# author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Desc Text."
-canonicalURL: "https://canonical.url/to/page"
+description: "Linux命令____head,tail,wc"
 disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
@@ -38,4 +35,26 @@ editPost:
 ---
 
 
-how are you today ?
+head  从头开始输出
+```
+head -n file.log   显示某一日个日志文件的前n行 （n表示数字）
+head     file.log   显示某一个文件的前十行
+```
+
+从最后开始输出
+```
+tail        catalina.out  显示后十行
+tail -100 catalina.out  显示后100行
+tail -100f catalina.out 从最后100行开始输出并实时输出更新日志
+```
+
+计算数量
+```
+[root@localhost logs]# wc -l catalina.out      ##计算行数
+41 catalina.out
+[root@localhost logs]# wc -w catalina.out     ##计算单词数量
+422 catalina.out
+[root@localhost logs]# wc -c catalina.out     ##计算字节数量
+6547 catalina.out
+
+```
